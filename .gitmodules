@@ -1,0 +1,3 @@
+[submodule "MathProblem-Dataset"]
+	path = MathProblem-Dataset
+	url = https://github.com/buptkang/MathProblem-Dataset
