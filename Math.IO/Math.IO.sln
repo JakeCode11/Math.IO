@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40121.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math.IO", "Math.IO\Math.IO.csproj", "{62F9EAF8-47FE-45D6-936A-3BBEB4A6B967}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math.IO", "Math.IO\Math.IO.csproj", "{13D8A154-5291-4E11-9DAB-9E268CDD9FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math.IO.Test", "Math.IO.Test\Math.IO.Test.csproj", "{A9E00053-020F-495C-B428-9216BB5967A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{62F9EAF8-47FE-45D6-936A-3BBEB4A6B967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62F9EAF8-47FE-45D6-936A-3BBEB4A6B967}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62F9EAF8-47FE-45D6-936A-3BBEB4A6B967}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62F9EAF8-47FE-45D6-936A-3BBEB4A6B967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D8A154-5291-4E11-9DAB-9E268CDD9FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D8A154-5291-4E11-9DAB-9E268CDD9FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D8A154-5291-4E11-9DAB-9E268CDD9FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D8A154-5291-4E11-9DAB-9E268CDD9FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E00053-020F-495C-B428-9216BB5967A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E00053-020F-495C-B428-9216BB5967A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E00053-020F-495C-B428-9216BB5967A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E00053-020F-495C-B428-9216BB5967A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
