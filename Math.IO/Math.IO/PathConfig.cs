@@ -9,11 +9,8 @@ namespace Math.IO
 {
     public static class PathConfig
     {
-        private static string _conceptFilePath = "Topics.json";
-
-        private static string _problemFilePath = "Problems.json";
-
-        private static string _instructionPath = "Instructions.json";
+        private static string _conceptFilePath = "Concepts.json";
+        private static string _topicFilePath   = "Topics.json";
 
         private static string _dataFolderName = "MathProblem-Dataset";
 
