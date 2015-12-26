@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Math.IO
+namespace MathIO
 {
     public class ConceptNode
     {
@@ -12,11 +12,19 @@ namespace Math.IO
 
         public double learntProb { get; set; }
 
-        public TopicNode Topic { get; set; } 
+        public string Topic { get; set; }
+
+        public string ErrorConcept { get; set; }
 
         public ConceptNode(string concept)
         {
             Concept = concept;
+        }
+
+        public ConceptNode(string concept, string topic)
+        {
+            Concept = concept;
+            Topic = topic;
         }
     }
 }

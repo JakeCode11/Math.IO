@@ -7,8 +7,8 @@
     <ProjectGuid>{13D8A154-5291-4E11-9DAB-9E268CDD9FED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Math.IO</RootNamespace>
-    <AssemblyName>Math.KnowledgeGraph</AssemblyName>
+    <RootNamespace>MathIO</RootNamespace>
+    <AssemblyName>MathIO</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -70,14 +70,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConceptIO.cs" />
-    <Compile Include="ConceptIOTest.cs" />
-    <Compile Include="PathConfig.cs" />
+    <Compile Include="Concept\ConceptEdge.cs" />
+    <Compile Include="Concept\ConceptGraphUtils.cs" />
+    <Compile Include="MathIOTest.cs" />
+    <Compile Include="Concept\ConceptNode.cs" />
+    <Compile Include="MathIO.cs" />
+    <Compile Include="Problem\MathProblem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scaffolding\Scaffolding.cs" />
+    <Compile Include="Scaffolding\ScaffoldingStep.cs" />
+    <Compile Include="Topic\TopicIO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Math.IO
+namespace MathIO
 {
     public class TopicNode
     {
         public string Topic { get; set; }
+
+        public List<TopicNode> Dependencies { get; set; } //TODO 
 
         public TopicNode(string _topic)
         {
