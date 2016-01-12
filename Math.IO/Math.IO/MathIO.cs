@@ -84,7 +84,7 @@ namespace MathIO
         {
             LoadTopics();
             LoadConcepts();
-            LoadErrorConcepts();
+            //LoadErrorConcepts();
             LoadProblems();
             LoadScaffolding();
         }
@@ -154,6 +154,7 @@ namespace MathIO
             }
         }
 
+        [Obsolete]
         private void LoadErrorConcepts()
         {
             string inputUrl = RetrievePath(_errorConceptFilePath);

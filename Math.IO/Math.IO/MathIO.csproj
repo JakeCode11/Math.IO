@@ -33,12 +33,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GraphSharp">
-      <HintPath>..\packages\GraphSharp.1.1.0.0\lib\net40\GraphSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="GraphSharp.Controls">
-      <HintPath>..\packages\GraphSharp.1.1.0.0\lib\net40\GraphSharp.Controls.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -72,7 +66,7 @@
   <ItemGroup>
     <Compile Include="Concept\ConceptEdge.cs" />
     <Compile Include="Concept\ConceptGraphUtils.cs" />
-    <Compile Include="MathIOTest.cs" />
+    <Compile Include="OrderStatistics.cs" />
     <Compile Include="Concept\ConceptNode.cs" />
     <Compile Include="MathIO.cs" />
     <Compile Include="Problem\MathProblem.cs" />
