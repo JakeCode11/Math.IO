@@ -20,12 +20,14 @@ namespace MathIO
 
         private static MathInputs _instance;
 
+        public static string path;
+
         private MathInputs()
         {
             Topics = new List<TopicNode>();
             ConceptGraph = new BidirectionalGraph<ConceptNode, Edge<ConceptNode>>();
             Problems = new List<MathProblem>();
-            Load();
+            Load(path);
         }
 
         public static MathInputs Instance
@@ -58,13 +60,13 @@ namespace MathIO
 
         private static string _dataFolderName = "MathProblem-Dataset";
 
-        public static string RetrievePath(string filePath)
+        public static string RetrievePath(string path, string filePath)
         {
             string startupPath;
             try
             {
                 startupPath =
-                    Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,
+                    Path.Combine(path,
                         _dataFolderName,
                         filePath);
                 return startupPath;
@@ -80,7 +82,7 @@ namespace MathIO
 
         #region Load
 
-        public void Load()
+        public void Load(string inputUrl)
         {
             LoadTopics();
             LoadConcepts();
@@ -91,7 +93,7 @@ namespace MathIO
 
         private void LoadTopics()
         {
-            string inputUrl = RetrievePath(_topicFilePath);
+            string inputUrl = RetrievePath(path,_topicFilePath);
 
             using (StreamReader file = File.OpenText(inputUrl))
             {
@@ -112,8 +114,7 @@ namespace MathIO
 
         private void LoadConcepts()
         {
-            string inputUrl = RetrievePath(_conceptFilePath);
-            
+            string inputUrl = RetrievePath(path,_conceptFilePath);
             using (StreamReader file = File.OpenText(inputUrl))
             {
                 using (var reader = new JsonTextReader(file))
@@ -125,7 +126,7 @@ namespace MathIO
                         Debug.Assert(jo != null);
 
                         var concept = (string)jo.GetValue("concept");
-                        var topic = (string) jo.GetValue("topic");
+                        var topic = (string)jo.GetValue("topic");
 
                         var conceptNode = new ConceptNode(concept, topic);
 
@@ -145,7 +146,7 @@ namespace MathIO
                             if (cn == null)
                             {
                                 cn = new ConceptNode(dependentConcept);
-                                ConceptGraph.AddVertex(cn);                                
+                                ConceptGraph.AddVertex(cn);
                             }
                             ConceptGraph.AddEdge(new Edge<ConceptNode>(cn, conceptNode));
                         }
@@ -157,7 +158,7 @@ namespace MathIO
         [Obsolete]
         private void LoadErrorConcepts()
         {
-            string inputUrl = RetrievePath(_errorConceptFilePath);
+            string inputUrl = RetrievePath(path,_errorConceptFilePath);
             using (StreamReader file = File.OpenText(inputUrl))
             {
                 using (var reader = new JsonTextReader(file))
@@ -182,7 +183,7 @@ namespace MathIO
 
         private void LoadProblems()
         {
-            string inputUrl = RetrievePath(_problemFilePath);
+            string inputUrl = RetrievePath(path,_problemFilePath);
             using (StreamReader file = File.OpenText(inputUrl))
             {
                 using (var reader = new JsonTextReader(file))

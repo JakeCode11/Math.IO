@@ -17,7 +17,5 @@ namespace MathIO
             SourceConcept = _source;
             TargetConcept = _target;
         }
-
-
     }
 }

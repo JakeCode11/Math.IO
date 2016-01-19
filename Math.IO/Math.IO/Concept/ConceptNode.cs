@@ -26,5 +26,10 @@ namespace MathIO
             Concept = concept;
             Topic = topic;
         }
+
+        public override string ToString()
+        {
+            return Concept;
+        }
     }
 }
