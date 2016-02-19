@@ -1,427 +1,548 @@
 [
     {
-      "concept": "positive integer",
-      "topic": "number",
-      "dependencies": []
+        "concept": "arithmetic addition",
+        "topic": "arithmetic",
+        "ignore": "false",
+        "isError": "true",
+        "dependencies": [ ]
     },
     {
-      "concept": "negative integer",
-      "topic": "number",
-      "dependencies": ["positive integer"]
+        "concept": "arithmetic subtraction",
+        "topic": "arithmetic",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "arithmetic addition" ]
     },
     {
-      "concept": "positive decimal",
-      "topic": "number",
-      "dependencies": []
+        "concept": "arithmetic multiplication",
+        "topic": "arithmetic",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "arithmetic addition", "arithmetic subtraction" ]
     },
     {
-      "concept": "negative decimal",
-      "topic": "number",
-      "dependencies": ["positive decimal"]
-    },
-
-    {
-      "concept": "arithmetic addition",
-      "topic": "arithmetic",
-      "dependencies": []
+        "concept": "arithmetic division",
+        "topic": "arithmetic",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "arithmetic multiplication" ]
     },
     {
-      "concept": "arithmetic subtraction",
-      "topic": "arithmetic",
-      "dependencies": ["arithmetic addition"]
+        "concept": "arithmetic factoring",
+        "topic": "arithmetic",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "arithmetic division" ]
     },
     {
-      "concept": "arithmetic multiplication",
-      "topic": "arithmetic",
-      "dependencies": ["arithmetic addition", "arithmetic subtraction"]
+        "concept": "arithmetic square root",
+        "topic": "arithmetic",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "arithmetic factoring" ]
     },
     {
-      "concept": "arithmetic division",
-      "topic": "arithmetic",
-      "dependencies": ["arithmetic multiplication"]
+        "concept": "variable negation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "arithmetic square root" ]
     },
     {
-      "concept": "arithmetic factoring",
-      "topic": "arithmetic",
-      "dependencies": ["arithmetic division"]
+        "concept": "variable double negation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "variable negation" ]
     },
     {
-      "concept": "arithmetic square root",
-      "topic": "arithmetic",
-      "dependencies": ["arithmetic factoring"]
-    },
-
-    {
-      "concept": "variable negation",
-      "topic": "algebra",
-      "dependencies": []
+        "concept": "commutative law",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "variable double negation" ]
     },
     {
-      "concept": "variable double negation",
-      "topic": "algebra",
-      "dependencies": ["variable negation"]
+        "concept": "associative law",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "commutative law" ]
     },
     {
-      "concept": "commutative law",
-      "topic": "algebra",
-      "dependencies": ["variable double negation"]
+        "concept": "distributive law",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "associative law" ]
     },
     {
-      "concept": "associative law",
-      "topic": "algebra",
-      "dependencies": ["commutative law"]
+        "concept": "identity law",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "variable double negation" ]
     },
     {
-      "concept": "distributive law",
-      "topic": "algebra",
-      "dependencies": ["associative law"]
+        "concept": "inverse law",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "variable double negation" ]
     },
     {
-      "concept": "additive identity",
-      "topic": "algebra",
-      "dependencies": ["variable double negation"]
+        "concept": "combining like terms",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "commutative law", "associative law", "distributive law", "identity law", "inverse law" ]
     },
     {
-      "concept": "multiplicative identity",
-      "topic": "algebra",
-      "dependencies": ["additive identity"]
+        "concept": "add in both sides of equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "combining like terms" ]
     },
     {
-      "concept": "additive inverse",
-      "topic": "algebra",
-      "dependencies": ["variable double negation"]
+        "concept": "substract in both sides of equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "add in both sides of equation" ]
     },
     {
-      "concept": "multiplicative inverse",
-      "topic": "algebra",
-      "dependencies": ["additive inverse"]
+        "concept": "multiply in both sides of equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "substract in both sides of equation" ]
     },
     {
-      "concept": "combining like terms",
-      "topic": "algebra",
-      "dependencies": ["commutative law", "associative law", "distributive law", "additive identity", "multiplicative identity", "additive inverse", "multiplicative inverse"]
+        "concept": "divide in boths sides of equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "multiply in both sides of equation" ]
     },
     {
-      "concept": "add in both sides of equation",
-      "topic": "algebra",
-      "dependencies": ["combining like terms"]
+        "concept": "factoring in boths sides of equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "multiply in both sides of equation" ]
     },
     {
-      "concept": "substract in both sides of equation",
-      "topic": "algebra",
-      "dependencies": ["add in both sides of equation"]
+        "concept": "square root in boths sides of equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "factoring in both sides of equation" ]
     },
     {
-      "concept": "multiply in both sides of equation",
-      "topic": "algebra",
-      "dependencies": ["substract in both sides of equation"]
+        "concept": "algebraic simplification",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "square root in boths sides of equation" ]
     },
     {
-      "concept": "divide in boths sides of equation",
-      "topic": "algebra",
-      "dependencies": ["multiply in both sides of equation"]
+        "concept": "algebraic expansion",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "square root in boths sides of equation" ]
     },
     {
-      "concept": "factoring in boths sides of equation",
-      "topic": "algebra",
-      "dependencies": ["multiply in both sides of equation"]
+        "concept": "solving algebraic single linear equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "algebraic simplification", "algebraic expansion" ]
     },
     {
-      "concept": "square root in boths sides of equation",
-      "topic": "algebra",
-      "dependencies": ["factoring in both sides of equation"]
+        "concept": "solving algebraic single quadratic equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "solving algebraic single linear equation" ]
     },
     {
-      "concept": "algebraic simplification",
-      "topic": "algebra",
-      "dependencies": ["square root in boths sides of equation"]
+        "concept": "substitution to solve two algebraic linear equations",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "graphing of two algebraic linear equations" ]
     },
     {
-      "concept": "algebraic expansion",
-      "topic": "algebra",
-      "dependencies": ["square root in boths sides of equation"]
+        "concept": "ellimination to solve two algebraic linear equations",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "substitution to solve two algebraic linear equations" ]
     },
     {
-      "concept": "solving algebraic single linear equation",
-      "topic": "algebra",
-      "dependencies": ["algebraic simplification", "algebraic expansion"]
+        "concept": "solving two algebraic linear system",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "graphing two algebraic linear equations", "substitution to solve two algebraic linear equations", "ellimination to solve two algebraic linear equations" ]
     },
     {
-      "concept": "solving algebraic single quadratic equation",
-      "topic": "algebra",
-      "dependencies": ["solving algebraic single linear equation"]
-    },
-
-    {
-      "concept": "substitution to solve two algebraic linear equations",
-      "topic": "algebra",
-      "dependencies": ["graphing of two algebraic linear equations"]
+        "concept": "graphing algebraic single linear equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "solving algebraic single linear equation" ]
     },
     {
-      "concept": "ellimination to solve two algebraic linear equations",
-      "topic": "algebra",
-      "dependencies": ["substitution to solve two algebraic linear equations"]
+        "concept": "graphing algebraic single quadratic equation",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "solving algebraic single quadratic equation" ]
     },
     {
-      "concept": "solving two algebraic linear system",
-      "topic": "algebra",
-      "dependencies": ["graphing two algebraic linear equations", "substitution to solve two algebraic linear equations", "ellimination to solve two algebraic linear equations"]
+        "concept": "graphing two algebraic linear equations",
+        "topic": "algebra",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "graphing algebraic single linear equation" ]
     },
     {
-      "concept": "graphing algebraic single linear equation",
-      "topic": "algebra",
-      "dependencies": ["solving algebraic single linear equation"]
+        "concept": "x-coordinate",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ ]
     },
     {
-      "concept": "graphing algebraic single quadratic equation",
-      "topic": "algebra",
-      "dependencies": ["solving algebraic single quadratic equation"]
+        "concept": "y-coordinate",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ ]
     },
     {
-      "concept": "graphing two algebraic linear equations",
-      "topic": "algebra",
-      "dependencies": ["graphing algebraic single linear equation"]
-    },
-
-
-    {
-      "concept": "x-coordinate",
-      "topic": "geometry",
-      "dependencies": []
+        "concept": "point",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "x-coordinate", "y-coordinate" ]
     },
     {
-      "concept": "y-coordinate",
-      "topic": "geometry",
-      "dependencies": []
+        "concept": "line",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "point" ]
     },
     {
-      "concept": "point",
-      "topic": "geometry",
-      "dependencies": ["x-coordinate","y-coordinate"]
+        "concept": "line slope",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "point", "line" ]
     },
     {
-      "concept": "line",
-      "topic": "geometry",
-      "dependencies": ["point"]
+        "concept": "positive slope",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line slope" ]
     },
     {
-      "concept": "line slope",
-      "topic": "geometry",
-      "dependencies": ["point", "line"]
+        "concept": "negative slope",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line slope" ]
     },
     {
-      "concept": "positive slope",
-      "topic": "geometry",
-      "dependencies": ["line slope"]
+        "concept": "zero slope",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line slope" ]
     },
     {
-      "concept": "negative slope",
-      "topic": "geometry",
-      "dependencies": ["line slope"]
+        "concept": "line y-intercept",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line slope", "point" ]
     },
     {
-      "concept": "zero slope",
-      "topic": "geometry",
-      "dependencies": ["line slope"]
+        "concept": "positive y-intercept",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "y-intercept" ]
     },
     {
-      "concept": "line y-intercept",
-      "topic": "geometry",
-      "dependencies": ["line slope", "point"]
+        "concept": "negative y-intercept",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "y-intercept" ]
     },
     {
-      "concept": "positive y-intercept",
-      "topic": "geometry",
-      "dependencies": ["y-intercept"]
+        "concept": "zero y-intercept",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "y-intercept" ]
     },
     {
-      "concept": "negative y-intercept",
-      "topic": "geometry",
-      "dependencies": ["y-intercept"]
+        "concept": "x-intercept",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "point", "slope" ]
     },
     {
-      "concept": "zero y-intercept",
-      "topic": "geometry",
-      "dependencies": ["y-intercept"]
+        "concept": "line equation",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line" ]
     },
     {
-      "concept": "x-intercept",
-      "topic": "geometry",
-      "dependencies": ["point", "slope"]
+        "concept": "line coefficient",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line equation" ]
     },
     {
-      "concept": "line equation",
-      "topic": "geometry",
-      "dependencies": ["line"]
+        "concept": "line standard form",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line coefficient", "line equation" ]
     },
     {
-      "concept": "line coefficient",
-      "topic": "geometry",
-      "dependencies": ["line equation"]
+        "concept": "line point slope form",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line coefficient", "line equation" ]
     },
     {
-      "concept": "line standard form",
-      "topic": "geometry",
-      "dependencies": ["line coefficient", "line equation"]
+        "concept": "line slope intercept form",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line coefficient", "line equation" ]
     },
     {
-      "concept": "line point slope form",
-      "topic": "geometry",
-      "dependencies": ["line coefficient", "line equation"]
+        "concept": "x-axis",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line", "zero slope", "line standard form" ]
     },
     {
-      "concept": "line slope intercept form",
-      "topic": "geometry",
-      "dependencies": ["line coefficient", "line equation"]
-    },
-    {
-      "concept": "x-axis",
-      "topic": "geometry",
-      "dependencies": ["line", "zero slope", "line standard form"]
-    },
-    {
-      "concept": "y-axis",
-      "topic": "geometry",
-      "dependencies": ["line","zero slope", "line standard form"]
+        "concept": "y-axis",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "line", "zero slope", "line standard form" ]
     },
     {
       "concept": "line segment",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "line", "point" ]
     },
     {
       "concept": "Pythagorean theorem",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [""]
     },
     {
       "concept": "distance",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "Pythagorean theorem"]
     },    
     {
       "concept": "distance between two points",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "line segment", "distance"]
     },   
     {
       "concept": "mid-point",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": ["point"]
     },
     {
       "concept": "mid-point equation",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": ["mid-point"]
     },
     {
       "concept": "two lines intersect",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": ["line"]
     },
     {
       "concept": "two line parallel",
-      "topic": "line" ,
+        "topic": "line",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": ["two lines intersect","line slope"]
     }, 
     {
       "concept": "two line perpendicular",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": ["line", "two line intersect"]
     },    
     {
       "concept": "degrees",
       "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ ]
     },
     {
       "concept": "pi",
       "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ ]
     },
     {
       "concept": "radians",
       "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies":  [ "pi"]
     },
     {
       "concept": "angle size",
       "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "degrees", "radians" ]
     },
     {
       "concept": "angle",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "degrees", "radians"]
     },
     {
       "concept": "circle",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "" ]
     },
     {
       "concept": "circle center",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": ["circle"]
     },
     {
       "concept": "circle radius",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "distance", "circle center"]
     },
     {
       "concept": "circle equation",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle" ]
     },
     {
       "concept": "circle center-radius form",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle equation"]
     },
     {
       "concept": "circle H value",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle equation" ]
     },
     {
       "concept": "circle general form",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle equation"]
     },
     {
       "concept": "circle D coefficient",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle equation" ]
     },
     {
       "concept": "circle E coefficient",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle equation" ]
     },
     {
       "concept": "circle F value",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle equation" ]
     },
     {
       "concept": "circle diameter",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "radius", "circle"]
     },
     {
       "concept": "circle circumference",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle radius", "circle", "circle diameter", "pi"]
     },
     {
       "concept": "circle area",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": [ "circle radius", "circle", "pi"]
     }, 
     {
       "concept": "tangent",
-      "topic": "geometry",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
       "dependencies": []
     }
 ]
