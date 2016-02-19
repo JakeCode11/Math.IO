@@ -1,3 +1,0 @@
-﻿Visualize concept graph using GraphSharp
-
-https://graphsharp.codeplex.com/

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MathIO_Visual.Properties
+namespace VisualAnalytics.Properties
 {
 
 

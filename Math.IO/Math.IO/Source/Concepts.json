@@ -1,0 +1,427 @@
+[
+    {
+      "concept": "positive integer",
+      "topic": "number",
+      "dependencies": []
+    },
+    {
+      "concept": "negative integer",
+      "topic": "number",
+      "dependencies": ["positive integer"]
+    },
+    {
+      "concept": "positive decimal",
+      "topic": "number",
+      "dependencies": []
+    },
+    {
+      "concept": "negative decimal",
+      "topic": "number",
+      "dependencies": ["positive decimal"]
+    },
+
+    {
+      "concept": "arithmetic addition",
+      "topic": "arithmetic",
+      "dependencies": []
+    },
+    {
+      "concept": "arithmetic subtraction",
+      "topic": "arithmetic",
+      "dependencies": ["arithmetic addition"]
+    },
+    {
+      "concept": "arithmetic multiplication",
+      "topic": "arithmetic",
+      "dependencies": ["arithmetic addition", "arithmetic subtraction"]
+    },
+    {
+      "concept": "arithmetic division",
+      "topic": "arithmetic",
+      "dependencies": ["arithmetic multiplication"]
+    },
+    {
+      "concept": "arithmetic factoring",
+      "topic": "arithmetic",
+      "dependencies": ["arithmetic division"]
+    },
+    {
+      "concept": "arithmetic square root",
+      "topic": "arithmetic",
+      "dependencies": ["arithmetic factoring"]
+    },
+
+    {
+      "concept": "variable negation",
+      "topic": "algebra",
+      "dependencies": []
+    },
+    {
+      "concept": "variable double negation",
+      "topic": "algebra",
+      "dependencies": ["variable negation"]
+    },
+    {
+      "concept": "commutative law",
+      "topic": "algebra",
+      "dependencies": ["variable double negation"]
+    },
+    {
+      "concept": "associative law",
+      "topic": "algebra",
+      "dependencies": ["commutative law"]
+    },
+    {
+      "concept": "distributive law",
+      "topic": "algebra",
+      "dependencies": ["associative law"]
+    },
+    {
+      "concept": "additive identity",
+      "topic": "algebra",
+      "dependencies": ["variable double negation"]
+    },
+    {
+      "concept": "multiplicative identity",
+      "topic": "algebra",
+      "dependencies": ["additive identity"]
+    },
+    {
+      "concept": "additive inverse",
+      "topic": "algebra",
+      "dependencies": ["variable double negation"]
+    },
+    {
+      "concept": "multiplicative inverse",
+      "topic": "algebra",
+      "dependencies": ["additive inverse"]
+    },
+    {
+      "concept": "combining like terms",
+      "topic": "algebra",
+      "dependencies": ["commutative law", "associative law", "distributive law", "additive identity", "multiplicative identity", "additive inverse", "multiplicative inverse"]
+    },
+    {
+      "concept": "add in both sides of equation",
+      "topic": "algebra",
+      "dependencies": ["combining like terms"]
+    },
+    {
+      "concept": "substract in both sides of equation",
+      "topic": "algebra",
+      "dependencies": ["add in both sides of equation"]
+    },
+    {
+      "concept": "multiply in both sides of equation",
+      "topic": "algebra",
+      "dependencies": ["substract in both sides of equation"]
+    },
+    {
+      "concept": "divide in boths sides of equation",
+      "topic": "algebra",
+      "dependencies": ["multiply in both sides of equation"]
+    },
+    {
+      "concept": "factoring in boths sides of equation",
+      "topic": "algebra",
+      "dependencies": ["multiply in both sides of equation"]
+    },
+    {
+      "concept": "square root in boths sides of equation",
+      "topic": "algebra",
+      "dependencies": ["factoring in both sides of equation"]
+    },
+    {
+      "concept": "algebraic simplification",
+      "topic": "algebra",
+      "dependencies": ["square root in boths sides of equation"]
+    },
+    {
+      "concept": "algebraic expansion",
+      "topic": "algebra",
+      "dependencies": ["square root in boths sides of equation"]
+    },
+    {
+      "concept": "solving algebraic single linear equation",
+      "topic": "algebra",
+      "dependencies": ["algebraic simplification", "algebraic expansion"]
+    },
+    {
+      "concept": "solving algebraic single quadratic equation",
+      "topic": "algebra",
+      "dependencies": ["solving algebraic single linear equation"]
+    },
+
+    {
+      "concept": "substitution to solve two algebraic linear equations",
+      "topic": "algebra",
+      "dependencies": ["graphing of two algebraic linear equations"]
+    },
+    {
+      "concept": "ellimination to solve two algebraic linear equations",
+      "topic": "algebra",
+      "dependencies": ["substitution to solve two algebraic linear equations"]
+    },
+    {
+      "concept": "solving two algebraic linear system",
+      "topic": "algebra",
+      "dependencies": ["graphing two algebraic linear equations", "substitution to solve two algebraic linear equations", "ellimination to solve two algebraic linear equations"]
+    },
+    {
+      "concept": "graphing algebraic single linear equation",
+      "topic": "algebra",
+      "dependencies": ["solving algebraic single linear equation"]
+    },
+    {
+      "concept": "graphing algebraic single quadratic equation",
+      "topic": "algebra",
+      "dependencies": ["solving algebraic single quadratic equation"]
+    },
+    {
+      "concept": "graphing two algebraic linear equations",
+      "topic": "algebra",
+      "dependencies": ["graphing algebraic single linear equation"]
+    },
+
+
+    {
+      "concept": "x-coordinate",
+      "topic": "geometry",
+      "dependencies": []
+    },
+    {
+      "concept": "y-coordinate",
+      "topic": "geometry",
+      "dependencies": []
+    },
+    {
+      "concept": "point",
+      "topic": "geometry",
+      "dependencies": ["x-coordinate","y-coordinate"]
+    },
+    {
+      "concept": "line",
+      "topic": "geometry",
+      "dependencies": ["point"]
+    },
+    {
+      "concept": "line slope",
+      "topic": "geometry",
+      "dependencies": ["point", "line"]
+    },
+    {
+      "concept": "positive slope",
+      "topic": "geometry",
+      "dependencies": ["line slope"]
+    },
+    {
+      "concept": "negative slope",
+      "topic": "geometry",
+      "dependencies": ["line slope"]
+    },
+    {
+      "concept": "zero slope",
+      "topic": "geometry",
+      "dependencies": ["line slope"]
+    },
+    {
+      "concept": "line y-intercept",
+      "topic": "geometry",
+      "dependencies": ["line slope", "point"]
+    },
+    {
+      "concept": "positive y-intercept",
+      "topic": "geometry",
+      "dependencies": ["y-intercept"]
+    },
+    {
+      "concept": "negative y-intercept",
+      "topic": "geometry",
+      "dependencies": ["y-intercept"]
+    },
+    {
+      "concept": "zero y-intercept",
+      "topic": "geometry",
+      "dependencies": ["y-intercept"]
+    },
+    {
+      "concept": "x-intercept",
+      "topic": "geometry",
+      "dependencies": ["point", "slope"]
+    },
+    {
+      "concept": "line equation",
+      "topic": "geometry",
+      "dependencies": ["line"]
+    },
+    {
+      "concept": "line coefficient",
+      "topic": "geometry",
+      "dependencies": ["line equation"]
+    },
+    {
+      "concept": "line standard form",
+      "topic": "geometry",
+      "dependencies": ["line coefficient", "line equation"]
+    },
+    {
+      "concept": "line point slope form",
+      "topic": "geometry",
+      "dependencies": ["line coefficient", "line equation"]
+    },
+    {
+      "concept": "line slope intercept form",
+      "topic": "geometry",
+      "dependencies": ["line coefficient", "line equation"]
+    },
+    {
+      "concept": "x-axis",
+      "topic": "geometry",
+      "dependencies": ["line", "zero slope", "line standard form"]
+    },
+    {
+      "concept": "y-axis",
+      "topic": "geometry",
+      "dependencies": ["line","zero slope", "line standard form"]
+    },
+    {
+      "concept": "line segment",
+      "topic": "geometry",
+      "dependencies": [ "line", "point" ]
+    },
+    {
+      "concept": "Pythagorean theorem",
+      "topic": "geometry",
+      "dependencies": [""]
+    },
+    {
+      "concept": "distance",
+      "topic": "geometry",
+      "dependencies": [ "Pythagorean theorem"]
+    },    
+    {
+      "concept": "distance between two points",
+      "topic": "geometry",
+      "dependencies": [ "line segment", "distance"]
+    },   
+    {
+      "concept": "mid-point",
+      "topic": "geometry",
+      "dependencies": ["point"]
+    },
+    {
+      "concept": "mid-point equation",
+      "topic": "geometry",
+      "dependencies": ["mid-point"]
+    },
+    {
+      "concept": "two lines intersect",
+      "topic": "geometry",
+      "dependencies": ["line"]
+    },
+    {
+      "concept": "two line parallel",
+      "topic": "line" ,
+      "dependencies": ["two lines intersect","line slope"]
+    }, 
+    {
+      "concept": "two line perpendicular",
+      "topic": "geometry",
+      "dependencies": ["line", "two line intersect"]
+    },    
+    {
+      "concept": "degrees",
+      "topic": "geometry",
+      "dependencies": [ ]
+    },
+    {
+      "concept": "pi",
+      "topic": "geometry",
+      "dependencies": [ ]
+    },
+    {
+      "concept": "radians",
+      "topic": "geometry",
+      "dependencies":  [ "pi"]
+    },
+    {
+      "concept": "angle size",
+      "topic": "geometry",
+      "dependencies": [ "degrees", "radians" ]
+    },
+    {
+      "concept": "angle",
+      "topic": "geometry",
+      "dependencies": [ "degrees", "radians"]
+    },
+    {
+      "concept": "circle",
+      "topic": "geometry",
+      "dependencies": [ "" ]
+    },
+    {
+      "concept": "circle center",
+      "topic": "geometry",
+      "dependencies": ["circle"]
+    },
+    {
+      "concept": "circle radius",
+      "topic": "geometry",
+      "dependencies": [ "distance", "circle center"]
+    },
+    {
+      "concept": "circle equation",
+      "topic": "geometry",
+      "dependencies": [ "circle" ]
+    },
+    {
+      "concept": "circle center-radius form",
+      "topic": "geometry",
+      "dependencies": [ "circle equation"]
+    },
+    {
+      "concept": "circle H value",
+      "topic": "geometry",
+      "dependencies": [ "circle equation" ]
+    },
+    {
+      "concept": "circle general form",
+      "topic": "geometry",
+      "dependencies": [ "circle equation"]
+    },
+    {
+      "concept": "circle D coefficient",
+      "topic": "geometry",
+      "dependencies": [ "circle equation" ]
+    },
+    {
+      "concept": "circle E coefficient",
+      "topic": "geometry",
+      "dependencies": [ "circle equation" ]
+    },
+    {
+      "concept": "circle F value",
+      "topic": "geometry",
+      "dependencies": [ "circle equation" ]
+    },
+    {
+      "concept": "circle diameter",
+      "topic": "geometry",
+      "dependencies": [ "radius", "circle"]
+    },
+    {
+      "concept": "circle circumference",
+      "topic": "geometry",
+      "dependencies": [ "circle radius", "circle", "circle diameter", "pi"]
+    },
+    {
+      "concept": "circle area",
+      "topic": "geometry",
+      "dependencies": [ "circle radius", "circle", "pi"]
+    }, 
+    {
+      "concept": "tangent",
+      "topic": "geometry",
+      "dependencies": []
+    }
+]

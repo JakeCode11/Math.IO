@@ -1,8 +1,0 @@
-﻿<Window x:Class="MathIO_Visual.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Mainwindow" WindowState="Maximized">
-    <Grid>
-        <Label> Visualization of Concept Graph</Label>
-    </Grid>
-</Window>

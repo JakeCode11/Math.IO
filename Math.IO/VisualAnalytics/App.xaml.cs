@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace MathIO_Visual
+namespace VisualAnalytics
 {
     /// <summary>
     /// Interaction logic for App.xaml

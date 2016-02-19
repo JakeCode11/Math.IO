@@ -1,0 +1,18 @@
+﻿<Window x:Class="VisualAnalytics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:GraphSharp.Controls;assembly=GraphSharp.Controls"
+        xmlns:controls1="clr-namespace:WPFExtensions.Controls;assembly=WPFExtensions"
+        Title="MainWindow" Height="350" Width="525"
+        x:Name="root">
+    
+    <Grid>
+        <controls1:ZoomControl>
+            <controls:GraphLayout x:Name="graphLayout"
+                                  Graph ="{Binding ElementName=root, Path=GraphToVisualize}"
+                                  LayoutAlgorithmType="FR"
+                                  OverlapRemovalAlgorithmType="FSA"
+                                  HighlightAlgorithmType="Simple"/>
+        </controls1:ZoomControl>
+    </Grid>
+</Window>

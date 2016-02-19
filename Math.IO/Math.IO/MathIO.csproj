@@ -77,6 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <EmbeddedResource Include="Source\Concepts.json" />
+    <EmbeddedResource Include="Source\Problems.json" />
+    <EmbeddedResource Include="Source\Scaffoldings.json" />
+    <EmbeddedResource Include="Source\Topics.json" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
