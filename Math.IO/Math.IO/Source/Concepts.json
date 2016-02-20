@@ -25,7 +25,7 @@
         "topic": "arithmetic",
         "ignore": "false",
         "isError": "false",
-        "dependencies": ["arithmetic subtraction" ]
+        "dependencies": [ "arithmetic subtraction" ]
     },
     {
         "concept": "arithmetic division",
@@ -49,11 +49,18 @@
         "dependencies": [ "arithmetic factoring" ]
     },
     {
-        "concept": "algebraic variable negation",
+        "concept": "algebraic variable substitution",
         "topic": "algebra",
         "ignore": "false",
         "isError": "false",
         "dependencies": [ "arithmetic square root" ]
+    },
+    {
+        "concept": "algebraic variable negation",
+        "topic": "algebra",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "algebraic variable substitution" ]
     },
     {
         "concept": "algebraic variable double negation",
@@ -105,96 +112,84 @@
         "dependencies": [ "algebraic commutative law", "algebraic associative law", "algebraic distributive law", "algebraic identity law", "algebraic inverse law" ]
     },
     {
-        "concept": "add in both sides of equation",
+        "concept": "algebraic equation inverse",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "combining like terms" ]
+        "dependencies": [ "algebraic combining like terms" ]
     },
     {
-        "concept": "substract in both sides of equation",
+        "concept": "algebraic equation symmetric",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "add in both sides of equation" ]
+        "dependencies": [ "algebraic combining like terms" ]
     },
     {
-        "concept": "multiply in both sides of equation",
+        "concept": "algebraic equation transitive",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "substract in both sides of equation" ]
+        "dependencies": [ "algebraic combining like terms" ]
     },
     {
-        "concept": "divide in boths sides of equation",
+        "concept": "algebraic equation manipulation",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "multiply in both sides of equation" ]
+        "dependencies": [ "algebraic equation inverse", "algebraic equation symmetric", "algebraic equation transitive"]
     },
     {
-        "concept": "factoring in boths sides of equation",
+        "concept": "algebraic equation simplification",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "multiply in both sides of equation" ]
+        "dependencies": [ "algebraic equation manipulation" ]
     },
     {
-        "concept": "square root in boths sides of equation",
+        "concept": "algebraic equation expansion",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "factoring in both sides of equation" ]
-    },
-    {
-        "concept": "algebraic simplification",
-        "topic": "algebra",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "square root in boths sides of equation" ]
-    },
-    {
-        "concept": "algebraic expansion",
-        "topic": "algebra",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "square root in boths sides of equation" ]
+        "dependencies": [ "algebraic equation manipulation" ]
     },
     {
         "concept": "solving algebraic single linear equation",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "algebraic simplification", "algebraic expansion" ]
+        "dependencies": [ "algebraic equation simplification", "algebraic equation expansion" ]
     },
     {
         "concept": "solving algebraic single quadratic equation",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "algebraic equation simplification", "algebraic equation expansion"]
+    },
+    {
+        "concept": "solving two algebraic linear equations by substitution",
+        "topic": "algebra",
+        "ignore": "false",
         "isError": "false",
         "dependencies": [ "solving algebraic single linear equation" ]
     },
     {
-        "concept": "substitution to solve two algebraic linear equations",
+        "concept": "solving two algebraic linear equations by ellimination",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "graphing of two algebraic linear equations" ]
+        "dependencies": [ "solving algebraic single linear equation" ]
     },
     {
-        "concept": "ellimination to solve two algebraic linear equations",
+        "concept": "solving an algebraic linear system",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "substitution to solve two algebraic linear equations" ]
+        "dependencies": [ "solving two algebraic linear equations by substitution", "solving two algebraic linear equations by ellimination" ]
     },
-    {
-        "concept": "solving two algebraic linear system",
-        "topic": "algebra",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "graphing two algebraic linear equations", "substitution to solve two algebraic linear equations", "ellimination to solve two algebraic linear equations" ]
-    },
+
+
     {
         "concept": "graphing algebraic single linear equation",
         "topic": "algebra",
@@ -216,6 +211,7 @@
         "isError": "false",
         "dependencies": [ "graphing algebraic single linear equation" ]
     },
+
     {
         "concept": "x-coordinate",
         "topic": "geometry",
