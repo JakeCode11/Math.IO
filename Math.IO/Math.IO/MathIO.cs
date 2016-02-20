@@ -99,7 +99,12 @@ namespace MathIO
                     var concept = (string)jo.GetValue("concept");
                     var topic = (string)jo.GetValue("topic");
 
-                    var conceptNode = new ConceptNode(concept, topic);
+                    var ignore = (bool) jo.GetValue("ignore");
+                    if (ignore) continue;
+
+                    var isError = (bool) jo.GetValue("isError");
+
+                    var conceptNode = new ConceptNode(concept, topic,isError);
 
                     if (!ConceptGraph.ContainsVertex(conceptNode))
                     {

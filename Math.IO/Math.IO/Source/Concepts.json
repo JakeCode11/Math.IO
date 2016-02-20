@@ -14,11 +14,18 @@
         "dependencies": [ "arithmetic addition" ]
     },
     {
+        "concept": "Error arithmetic subtraction",
+        "topic": "arithmetic",
+        "ignore": "false",
+        "isError": "true",
+        "dependencies": [ "arithmetic subtraction" ]
+    },
+    {
         "concept": "arithmetic multiplication",
         "topic": "arithmetic",
         "ignore": "false",
         "isError": "false",
-        "dependencies": [ "arithmetic addition", "arithmetic subtraction" ]
+        "dependencies": ["arithmetic subtraction" ]
     },
     {
         "concept": "arithmetic division",
@@ -30,72 +37,72 @@
     {
         "concept": "arithmetic factoring",
         "topic": "arithmetic",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
         "dependencies": [ "arithmetic division" ]
     },
     {
         "concept": "arithmetic square root",
         "topic": "arithmetic",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
         "dependencies": [ "arithmetic factoring" ]
     },
     {
-        "concept": "variable negation",
+        "concept": "algebraic variable negation",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
         "dependencies": [ "arithmetic square root" ]
     },
     {
-        "concept": "variable double negation",
+        "concept": "algebraic variable double negation",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "variable negation" ]
+        "dependencies": [ "algebraic variable negation" ]
     },
     {
-        "concept": "commutative law",
+        "concept": "algebraic commutative law",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "variable double negation" ]
+        "dependencies": [ "algebraic variable double negation" ]
     },
     {
-        "concept": "associative law",
+        "concept": "algebraic associative law",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "commutative law" ]
+        "dependencies": [ "algebraic variable double negation" ]
     },
     {
-        "concept": "distributive law",
+        "concept": "algebraic distributive law",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "associative law" ]
+        "dependencies": [ "algebraic variable double negation" ]
     },
     {
-        "concept": "identity law",
+        "concept": "algebraic identity law",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "variable double negation" ]
+        "dependencies": [ "algebraic variable double negation" ]
     },
     {
-        "concept": "inverse law",
+        "concept": "algebraic inverse law",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "variable double negation" ]
+        "dependencies": [ "algebraic variable double negation" ]
     },
     {
-        "concept": "combining like terms",
+        "concept": "algebraic combining like terms",
         "topic": "algebra",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "commutative law", "associative law", "distributive law", "identity law", "inverse law" ]
+        "dependencies": [ "algebraic commutative law", "algebraic associative law", "algebraic distributive law", "algebraic identity law", "algebraic inverse law" ]
     },
     {
         "concept": "add in both sides of equation",

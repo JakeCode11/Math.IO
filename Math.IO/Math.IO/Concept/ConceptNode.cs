@@ -16,6 +16,8 @@ namespace MathIO
 
         public string ErrorConcept { get; set; }
 
+        public bool IsError { get; set; }
+
         public ConceptNode(string concept)
         {
             Concept = concept;
@@ -25,6 +27,13 @@ namespace MathIO
         {
             Concept = concept;
             Topic = topic;
+        }
+
+        public ConceptNode(string concept, string topic, bool isError)
+        {
+            Concept = concept;
+            Topic = topic;
+            IsError = isError;
         }
 
         public override string ToString()

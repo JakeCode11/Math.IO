@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:GraphSharp.Controls;assembly=GraphSharp.Controls"
         xmlns:controls1="clr-namespace:WPFExtensions.Controls;assembly=WPFExtensions"
-        Title="MainWindow" Height="350" Width="525"
+        Title="MainWindow" WindowState="Maximized"
         x:Name="root">
     
     <Grid>
