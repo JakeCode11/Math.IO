@@ -189,85 +189,184 @@
         "dependencies": [ "solving two algebraic linear equations by substitution", "solving two algebraic linear equations by ellimination" ]
     },
 
-
     {
-        "concept": "graphing algebraic single linear equation",
-        "topic": "algebra",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "solving algebraic single linear equation" ]
-    },
-    {
-        "concept": "graphing algebraic single quadratic equation",
-        "topic": "algebra",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "solving algebraic single quadratic equation" ]
-    },
-    {
-        "concept": "graphing two algebraic linear equations",
-        "topic": "algebra",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "graphing algebraic single linear equation" ]
-    },
-
-    {
-        "concept": "x-coordinate",
+        "concept": "coordinate System",
         "topic": "geometry",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
         "dependencies": [ ]
     },
     {
-        "concept": "y-coordinate",
+      "concept": "geometrical distance",
         "topic": "geometry",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ ]
+      "dependencies": [ "coordinate System"]
     },
     {
-        "concept": "point",
+        "concept": "geometrical line",
         "topic": "geometry",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "x-coordinate", "y-coordinate" ]
+        "dependencies": ["coordinate System" ]
     },
     {
-        "concept": "line",
+      "concept": "geometrical circle",
         "topic": "geometry",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "point" ]
+      "dependencies": [ "coordinate System" ]
     },
     {
-        "concept": "line slope",
+        "concept": "geometrical lines relation",
         "topic": "geometry",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "point", "line" ]
+        "dependencies": ["geometrical line" ]
     },
     {
-        "concept": "positive slope",
+        "concept": "geometrical lines intersect",
         "topic": "geometry",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "line slope" ]
+        "dependencies": [ "geometrical lines relation" ]
     },
     {
-        "concept": "negative slope",
+        "concept": "geometrical lines parallel",
         "topic": "geometry",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "line slope" ]
+        "dependencies": ["geometrical lines relation" ]
     },
     {
-        "concept": "zero slope",
+        "concept": "geometrical lines perpendicular",
         "topic": "geometry",
-        "ignore": "true",
+        "ignore": "false",
         "isError": "false",
-        "dependencies": [ "line slope" ]
+        "dependencies": [ "geometrical lines intersect" ]
     },
+    {
+        "concept": "geometrical line and point relation",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line" ]
+    },
+    {
+        "concept": "geometrical point on the line",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line and point relation" ]
+    },
+    {
+        "concept": "geometrical point off the line",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line and point relation" ]
+    },
+    {
+        "concept": "geometrical line and circle relation",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line", "geometrical circle"]
+    },
+    {
+        "concept": "geometrical line tangent to circle",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line and circle relation" ]
+    },
+    {
+        "concept": "geometrical line intersect to circle",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line and circle relation" ]
+    },
+    {
+        "concept": "geometrical line slope",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line" ]
+    },
+    {
+        "concept": "geometrical line intercept",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line" ]
+    },
+    {
+        "concept": "Error positive line slope",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "true",
+        "dependencies": [ "geometrical line slope" ]
+    },
+    {
+        "concept": "Error negative line slope",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line slope" ]
+    },
+    {
+        "concept": "Error zero line slope",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line slope" ]
+    },
+    {
+        "concept": "geometrical line standard form",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line" ]
+    },
+    {
+        "concept": "geometrical line point slope form",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line" ]
+    },
+    {
+        "concept": "geometrical line slope intercept form",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line" ]
+    },
+    {
+        "concept": "transform between geometrical line patterns",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "geometrical line slope intercept form", "geometrical line point slope form", "geometrical line standard form"]
+    },
+    {
+        "concept": "graphing an algebraic linear equation",
+        "topic": "geometry",
+        "ignore": "false",
+        "isError": "false",
+        "dependencies": [ "transform between geometrical line patterns" ]
+    },
+
+       
+
+
+
+
+
+
+
+
     {
         "concept": "line y-intercept",
         "topic": "geometry",
@@ -296,6 +395,23 @@
         "isError": "false",
         "dependencies": [ "y-intercept" ]
     },
+
+
+
+
+
+
+
+
+    {
+        "concept": "graphing an algebraic quadratic equation",
+        "topic": "geometry",
+        "ignore": "true",
+        "isError": "false",
+        "dependencies": [ "coordinate System" ]
+    },
+
+
     {
         "concept": "x-intercept",
         "topic": "geometry",
@@ -317,27 +433,7 @@
         "isError": "false",
         "dependencies": [ "line equation" ]
     },
-    {
-        "concept": "line standard form",
-        "topic": "geometry",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "line coefficient", "line equation" ]
-    },
-    {
-        "concept": "line point slope form",
-        "topic": "geometry",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "line coefficient", "line equation" ]
-    },
-    {
-        "concept": "line slope intercept form",
-        "topic": "geometry",
-        "ignore": "true",
-        "isError": "false",
-        "dependencies": [ "line coefficient", "line equation" ]
-    },
+    
     {
         "concept": "x-axis",
         "topic": "geometry",
@@ -366,13 +462,7 @@
         "isError": "false",
       "dependencies": [""]
     },
-    {
-      "concept": "distance",
-        "topic": "geometry",
-        "ignore": "true",
-        "isError": "false",
-      "dependencies": [ "Pythagorean theorem"]
-    },    
+   
     {
       "concept": "distance between two points",
         "topic": "geometry",
@@ -450,13 +540,7 @@
         "isError": "false",
       "dependencies": [ "degrees", "radians"]
     },
-    {
-      "concept": "circle",
-        "topic": "geometry",
-        "ignore": "true",
-        "isError": "false",
-      "dependencies": [ "" ]
-    },
+
     {
       "concept": "circle center",
         "topic": "geometry",
